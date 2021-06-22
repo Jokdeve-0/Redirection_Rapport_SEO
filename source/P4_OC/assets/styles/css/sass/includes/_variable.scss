@@ -1,0 +1,36 @@
+/*-BREAKPOINT-*/
+$mob: 410px;
+$mob-xl: 576px;
+$mob-xl-max: 767px;
+$tab: 768px;
+$tab-max: 1023px;
+$desk: 1024px;
+$desk-xl: 1400px;
+@keyframes rot {
+    from{
+        transform: rotate(810deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes retRot {
+    from{
+        transform: rotate(360deg);
+    }to{
+        transform: rotate(810deg);
+    }
+}
+@keyframes opMenu {
+    from{
+        left:-110%;
+    }to{
+        left:0%;
+    }
+}
+@keyframes cloMenu{
+    from{
+        left:0%;
+    }to{
+        left:-100%;
+    }
+}

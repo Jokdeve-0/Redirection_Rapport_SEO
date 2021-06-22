@@ -1,0 +1,56 @@
+
+#mob_menu{
+    position:fixed;
+    z-index: 99;
+    top:0;
+    left:-110%;
+    width:100%;
+    max-height:90vh;
+    overflow:scroll;
+    transition: all 1s ease-in-out;
+    & nav{
+        @include flex-mix($items:start,$flow:column);
+        background: #fff;
+        color:#2a2a2a;
+        padding: 1em;
+        width: 90%;
+        border-radius:25px;
+        & a{
+            height:50px;
+            font-size:1.2em;
+            margin-bottom: .2em;
+            color:#2a2a2a;
+            text-decoration: none;
+            &::after{
+                content:"";
+                display:block;
+                margin: .7em 1em .7em .2em;
+                @include bord-round();
+            }
+        }
+    }
+}
+#lab_menu,#cloMenu{
+    position:fixed;
+    top:0;
+    right:0;
+    z-index: 100;
+
+    & img{
+        width:50px;
+        height:auto;
+    }
+}
+
+#cloMenu{
+    visibility: hidden;
+    width:10px;
+}
+#cloMenu:checked+#mob_menu{
+    left:0;
+}
+#mob{
+    @media(min-width:$desk){
+        display: none;
+    }
+}

@@ -1,0 +1,92 @@
+
+.box-menu{
+    display:none;
+    @media(min-width:$desk){
+        display:block;
+    }
+    @include bord-round();
+    position: fixed;
+    text-align: left;
+    top:10px;
+    right:1em;
+    width:300px;
+    height:0px;
+    background: rgba(255,255,255,.5);
+    overflow:hidden;
+    transition: all 1s ease-in-out;
+    &#menu1{
+        z-index:2;
+        &::after{
+            content:"";
+            position: fixed;
+            z-index: 1;
+            height:48px;
+            width:48px;
+            margin-left:232px;
+            background: rgb(177, 0, 0);
+            background-image: url("../../img/icon_outils/link.png");
+            background-size: 60%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border: 2px solid #9a9a9a;
+            border-top: hidden;
+        }
+    }
+    &#menu2{
+        z-index: 1;
+        top:80px;
+        &::after{
+            content:"";
+            position:fixed;
+            z-index:2;
+            height:48px;
+            width:48px;
+            margin-left:232px;
+            background: rgb(177, 0, 0);
+            background-image: url("../../img/icon_outils/rapport.png");
+            background-size: 60%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border: 2px solid #9a9a9a;
+            border-top: hidden;
+        }
+    }
+    &:hover{
+        height:85vh;
+    }
+    & .menu{
+        @include flex-mix($content:flex-start);
+        width: 100%;
+        height: 100%;
+        padding-right: 2em;
+        overflow: auto;
+        background: #2a2a2a;
+        & p{
+            padding: .5em;
+        }
+        & a{
+            background: #fff;
+            width:100%;
+            color:#2a2a2a;
+            text-decoration: none;
+            padding-top: 1em;
+            padding-left: .9em;
+            font-size: .8em;
+            &:hover{
+                color:#FFFFFF;
+                background: #3a3a3a;
+            }
+            &::after{
+                content:"";
+                display:block;
+                margin: .7em 1em .7em .2em;
+                @include bord-round();
+            }
+        }
+    }
+}
+

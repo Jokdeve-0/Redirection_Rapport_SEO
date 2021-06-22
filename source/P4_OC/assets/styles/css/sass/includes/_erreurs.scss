@@ -1,0 +1,199 @@
+#erreurs{
+    & #legende{
+        @include flex-mix($flow:column);
+        padding: 1em .2em;
+        & img{
+            width:50px;
+            height: auto;
+        }
+        a{
+            font-size:1.5em;
+        }
+    }
+    & h2{
+        @include flex-mix($content:flex-start);
+        margin:0;
+        padding-bottom: 1em;
+        font-size:.9em;
+        & img{
+            width:25px;
+            height:25px;
+            margin-right: .5em;
+            transform: rotate(360deg);
+        }
+    }
+    & #table_erreurs{
+        overflow-x: scroll;
+        margin: 1em auto;
+        @media(max-width:$tab-max){
+            & .box-tete{
+                display: none;
+            }
+        }
+        & .box-tete .ligne{
+            background: #2a2a2a;
+            font-size:.8em;
+        }
+        & .box-tete span{
+            padding: 1em;
+            text-align: center;
+            color:#fff;
+            font-size:.8em;
+        }
+        & .box-ligne{
+            & .ligne{
+                &:nth-child(22),&:nth-child(23){
+                    & span:nth-child(4){
+                        background-image: url('../../img/icon_outils/warning.png');
+                        &:hover{
+                            background-image: url('../../img/icon_outils/help_circle_blue.png');
+                        }
+                    }
+                }
+            }
+            & span{
+                padding: 1em;
+                text-overflow: ellipsis;
+                & strong{
+                    display:block;
+                    text-decoration: underline;
+                    margin-bottom: .5em;
+                }
+                &.valid{
+                    background-image: url('../../img/icon_outils/checked-min.png');
+                    background-size: 20%;
+                    background-repeat: no-repeat;
+                    background-position: 50% 60%;
+                    min-height:100px;
+                    @media(min-width:$mob-xl){
+                        background-size: 10%;
+                    }
+                    @media(min-width:$desk){
+                        background-size: 50%;
+                        background-position: 50% 10%;
+                    }
+                    &:hover{
+                            background-image: url('../../img/icon_outils/help_circle_blue.png');
+                    }
+                    & a{
+                        color:#fff;
+                        padding: .2em;
+                        margin-top:4em;
+                        @include bord-round();
+                        text-decoration: none;
+                        text-shadow: 0 0 10px #fff;;
+                        font-size:1.2em;
+                        background: rgba(0,0,0,.4);
+                        transition: all .5s ease-in-out;
+                        &:hover{
+                            background: rgba(255,255,255,.4);
+                            color:#2a2a2a;
+                        }
+                    }
+                }
+            }
+        }
+        & .box-ligne .ligne:nth-child(1n+1){
+            background:rgb(180,180,180);
+        }
+        & .box-ligne .ligne:nth-child(2n+2){
+            background:rgb(250, 250, 250);
+        }
+        & .box-ligne .ligne span:nth-child(1),& tbody tr td:last-child{
+            text-align: center;
+        }
+        & .ligne{
+            @include flex-mix($content:space-between,$items:stretch);
+            padding: .5em;
+            border:4px solid #2a2a2a;
+            @media(min-width:$desk){
+                justify-content: center;
+            }
+        }
+        & .ligne span{
+            display:block;
+            margin: 0;
+            padding: .1em;
+            @media(min-width:$desk) {
+                border-right: 2px dotted #2a2a2a;
+            }
+        }
+        & .ligne span:nth-child(1){
+            width:100%;
+            @media(min-width:$desk){
+                width:13%;
+            }
+            font-weight: bold;
+            @media(max-width:$tab-max){
+                &::before{
+                    content:"Catégorie";
+                    display: block;
+                    padding: 1em 0;
+                    background: #2a2a2a;
+                    color:#fff;
+                    border-radius:5px;
+                    width:100%;
+                }
+            }
+        }
+        & .ligne span:nth-child(2){
+            width:100%;
+            @media(min-width:$desk){
+                width:35%;
+            }
+            @media(max-width:$tab-max){
+                &::before{
+                    content:"Identification";
+                    display: block;
+                    text-align: center;
+                    padding: 1em 0;
+                    background: #2a2a2a;
+                    color:#fff;
+                    border-radius:5px;
+                    width:100%;
+                }
+            }
+        }
+        & .ligne span:nth-child(3){
+            width:100%;
+            margin:1em 0;
+            @media(min-width:$desk){
+                width:40%;
+                margin: 0;
+            }
+            @media(max-width:$tab-max){
+                &::before{
+                    content:"Bonnes pratiques";
+                    display: block;
+                    text-align: center;
+                    padding: 1em 0;
+                    background: #2a2a2a;
+                    color:#fff;
+                    border-radius:5px;
+                    width:100%;
+                }
+            }
+        }
+        & .ligne span:nth-child(4){
+            width:100%;
+            @media(min-width:$desk){
+                width:9%;
+            }
+            @include flex-mix();
+            border-right: unset;
+            @media(max-width:$tab-max){
+                &::before{
+                    content:"Corrections";
+                    display: block;
+                    text-align: center;
+                    padding: 1em 0;
+                    background: #2a2a2a;
+                    color:#fff;
+                    border-radius:5px;
+                    width:100%;
+                }
+            }
+        }
+       
+    }
+}

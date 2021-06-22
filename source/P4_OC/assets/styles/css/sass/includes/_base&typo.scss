@@ -1,0 +1,45 @@
+*{
+    box-sizing: content-box;
+}
+html,body{
+    margin:0;
+    padding:.2em;
+    font-size:1.1em;
+    color:#fff;
+    background: #1f1f1f;
+}
+section{
+    @include backfont-light();
+    @include bord-round();
+    margin-bottom: 1em;
+}
+h1{
+    padding: .5em;
+    margin:0 0 1em 0; 
+}
+h2{
+    margin:0;
+    padding: 1em;
+    background: #2a2a2a;
+    color:#fff;
+}
+h1::first-letter,h2::first-letter,h3::first-letter{
+    text-transform: uppercase;
+}
+
+hr{
+    margin: .5em 0;
+}
+.w100{
+    display:block;
+    width:100%;
+}
+.hide{
+    display:none;
+}
+.rot_stop{
+    animation : retRot  1s ease-in-out forwards;
+}
+.rot_action{
+    animation : rot 1s ease-in-out forwards;
+}

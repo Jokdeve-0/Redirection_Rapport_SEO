@@ -1,0 +1,46 @@
+.page_erreur{
+    & h3,& p{
+        padding:.5em 1em;
+        margin:0;
+    }
+    & h3 img{
+        border:unset;
+    }
+    & p._bord{
+        @include bord-round();
+        margin: .5em 1em;
+        padding: 1em;
+    }
+    & figure{
+        @include backfont-light();
+        padding: 1em;
+        & img{
+            @include bord-round();
+            max-width:80%;
+            height:auto;
+            max-height:60vh;
+            margin-left: 1em;
+        }
+        & figcaption{
+            font-size:.8em;
+            margin-left: 3em;
+        }
+    }
+    & nav{
+        @include flex-mix($content:start);
+        margin: 1em;
+        & a{
+            color:#2a2a2a;
+            text-decoration: none;
+            font-size: 1.2em;
+            @include bord-round();
+            padding: 1em;
+            margin-right: 1em;
+            transition: all .5s ease-in-out;
+            &:hover{
+                background: #2a2a2a;
+                color:#fff;
+            }
+        }
+    }
+}

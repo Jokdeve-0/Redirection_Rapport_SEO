@@ -1,0 +1,66 @@
+{
+    "1":{
+        "outil":"Lighthouse",
+        "plate":{"1":"Desktop","2":"Mobile","3":"Toutes plateformes confondues"},
+        "link":{
+            "doc":"../docs/test-lighthouse-desktop-original.html","img1":"../assets/styles/img/rapport/li-des-or.JPG","fig":"*Rapport Lighthouse pour desktop avant les modifications"
+        },
+        "link2":{
+            "doc":"../docs/test-lighthouse-desktop-final.html","img1":"../assets/styles/img/rapport/li-des-fi.JPG","fig":"*Rapport Lighthouse pour desktop après les modifications"
+        },
+        "link3":{
+            "doc":"../docs/test-lighthouse-mobile-original.html","img1":"../assets/styles/img/rapport/li-mob-or.JPG","fig":"*Rapport Lighthouse pour mobile avant les modifications"
+        },
+        "link4":{
+            "doc":"../docs/test-lighthouse-mobile-final.html","img1":"../assets/styles/img/rapport/li-mob-fi.JPG","fig":"*Rapport Lighthouse pour mobile après les modifications"
+        }
+    },
+    "2":{
+        "outil":"aXe",
+        "plate":{"1":"Toutes plateformes confondues"},
+        "link":{
+            "img1":"../assets/styles/img/rapport/be-ac.jpg","fig":"*Rapport aXe page index avant les modifications"
+        },
+        "link2":{
+            "img1":"../assets/styles/img/rapport/af-ac.jpg","fig":"**Rapport aXe page index après les modifications"
+        },
+        "link3":{
+            "img1":"../assets/styles/img/rapport/be-con.jpg","fig":"*Rapport aXe page contact avant les modifications"
+        },
+        "link4":{
+            "img1":"../assets/styles/img/rapport/af-con.jpg","fig":"*Rapport aXe page contact après les modifications"
+        }
+    },
+    "3":{
+        "outil":"Wave",
+        "plate":{"1":"Toutes plateformes confondues"},
+        "link":{
+            "img1":"../assets/styles/img/rapport/be-acc-wave.jpg","fig":"*Rapport Wave page index avant les modifications"
+        },
+        "link2":{
+            "img1":"../assets/styles/img/rapport/af-acc-wave.jpg","fig":"**Rapport Wave page index après les modifications"
+        },
+        "link3":{
+            "img1":"../assets/styles/img/rapport/be-cont-wave.jpg","fig":"*Rapport Wave page contact avant les modifications"
+        },
+        "link4":{
+            "img1":"../assets/styles/img/rapport/af-cont-wave.jpg","fig":"*Rapport Wave page contact après les modifications"
+        }
+    },
+    "4":{
+        "outil":"W3C",
+        "plate":{"1":"Toutes plateformes confondues"},
+        "link":{
+            "img1":"../assets/styles/img/rapport/be-acc-w3c.jpg","fig":"*Rapport w3c page index avant les modifications"
+        },
+        "link2":{
+            "img1":"../assets/styles/img/rapport/af-acc-w3c.jpg","fig":"**Rapport w3c page index après les modifications"
+        },
+        "link3":{
+            "img1":"../assets/styles/img/rapport/be-con-w3c.jpg","fig":"*Rapport w3c page contact avant les modifications"
+        },
+        "link4":{
+            "img1":"../assets/styles/img/rapport/af-con-w3c.jpg","fig":"*Rapport w3c page contact après les modifications"
+        }
+    }
+}

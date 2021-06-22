@@ -1,0 +1,1 @@
+<a href="#top_page"><img id="btn-return" src="assets/styles/img/icon_outils/arrow.svg" alt="fleche vers le haut" aria-label="Retourner en haut de la page"></a>

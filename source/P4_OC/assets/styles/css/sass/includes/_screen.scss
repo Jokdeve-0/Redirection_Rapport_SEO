@@ -1,0 +1,26 @@
+#screenshot{
+    & h2{
+        @include flex-mix($content:flex-start);
+        margin:0;
+        font-size:.9em;
+        & img{
+            width:25px;
+            height:25px;
+            margin-right: .5em;
+            margin-left: 0;
+            transform: rotate(360deg);
+        }
+    }
+    & h3, & h4{
+        padding: 1em 1.5em;
+    }
+    & img{
+        width:90%;
+        border-radius: 25px;
+        margin-left: 5%;
+        @media(min-width:$tab){
+            width:50%;
+            margin-left: 25%;
+        }
+    }
+}
